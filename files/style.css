@@ -1,0 +1,826 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Slab:wght@500&family=Shantell+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.row {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+::selection {
+    background-color: #f5df4e;
+  }
+  
+nav {
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.nav-link.active {
+    border-bottom: 4px solid #f5df4e;
+}
+  
+.navbar-brand {
+    margin-left: 10rem;
+    margin-right: 5rem;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.navbar-nav a {
+    color: #333;
+}
+
+.nav-item {
+    padding-left: 3rem;
+}
+
+.nav-link {
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #080808;
+}
+
+.nav-link:hover {
+    border-bottom: 4px solid #f5df4e;
+}
+
+@media (max-width:970px) {
+    .navbar-brand {
+        margin-left: 1rem;
+    }
+
+    .shiv {
+        padding-top: 1rem;
+    }
+
+    .nav-link {
+        font-size: 1.5rem;
+    }
+
+    .nav-item {
+        padding-left: 1rem;
+    }
+}
+
+.mid {
+    background-color: #f5df4e;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 13rem 0 6.5rem 0;
+}
+
+.text h2 {
+    font-size: 2.8rem;
+}
+
+.text h1 {
+    font-size: 5rem;
+    font-weight: 800;
+}
+
+.text h1::before {
+    content: "DEVELOPER";
+    animation: animate linear infinite 3s;
+}
+
+@keyframes animate {
+
+    from {
+        content: "DEVELOPER";
+    }
+
+    to {
+        content: "DESIGNER";
+    }
+}
+
+.midimg {
+    flex: 1 0 300px;
+    margin: 20px;
+}
+
+.midimg img {
+    width: 34rem;
+    height: 40rem;
+    border-radius: 50%;
+    border: 18px solid #fff;
+}
+
+.text {
+    flex: 1 0 300px;
+    margin: 20px;
+    text-align: center;
+}
+
+.midbt {
+    padding-top: 1.5rem;
+}
+
+.bt1 {
+    background-color: black;
+    color: #fff;
+    padding: 0.8rem;
+    border: 1px solid black;
+    margin-right: 3rem;
+    width: 18rem;
+    font-size: 1.5rem;
+}
+
+.bt2 {
+    color: black;
+    border: none;
+    background: none;
+    text-decoration: underline;
+    font-size: 2rem;
+}
+
+@media (max-width: 350px) {
+    .midimg img {
+        width: 30rem;
+        height: 35rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .midimg {
+        flex: 1 0 40%;
+        margin: 20px 0;
+    }
+
+    .text {
+        flex: 1 0 40%;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 770px) {
+    .mid {
+        flex-direction: column;
+    }
+
+    .midimg {
+        flex-basis: 100%;
+    }
+
+    .text {
+        flex-basis: 100%;
+    }
+}
+
+.about {
+    /* margin-top: 10rem;
+    padding: 5rem 0 5rem 0; */
+    padding: 50px;
+    margin-top: 10rem;
+    padding: 10rem 0 15rem 0;
+}
+
+.me {
+    text-align: center;
+}
+
+.me h3 {
+    display: inline-block;
+    padding: 0.6rem;
+    background-color: #f5df4e;
+}
+
+.me h2 {
+    font-weight: 600;
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+
+.me1 {
+    margin: 3rem 13rem;
+}
+
+.me1 h2 {
+    font-size: 3rem;
+}
+
+.mename {
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-color: #f5df4e;
+    text-decoration-thickness: 4px;
+}
+
+.me1 p {
+    font-size: 1.8rem;
+    color: rgb(100, 99, 99);
+}
+
+.medetails {
+    display: flex;
+    margin: 4rem 0 4rem 13rem;
+}
+
+.medetails div {
+    padding-right: 4.5rem;
+}
+
+.medetails div p {
+    font-size: 1.4rem;
+    color: rgb(100, 99, 99);
+}
+
+.medetails div h4 {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.memail {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #333;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.services {
+    background-color: whitesmoke;
+    margin-top: 15rem;
+}
+
+.ser1 {
+    padding-top: 12rem;
+    text-align: center;
+}
+
+.ser1 h3 {
+    display: inline-block;
+    padding: 0.6rem;
+    background-color: #f5df4e;
+    font-size: 1.9rem;
+}
+
+.ser1 h2 {
+    font-size: 3.6rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.ser21 {
+    display: flex;
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.ml {
+    margin-left: 10rem;
+    margin-right: 3.5rem;
+}
+
+.mr {
+    margin-left: 3.5rem;
+    margin-right: 10rem;
+}
+
+.ser21 div h3,
+.ser22 div h3 {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.ser21 div p {
+    font-size: 1.5rem;
+    color: rgb(100, 99, 99);
+}
+
+.ser22 {
+    display: flex;
+    text-align: center;
+    padding-bottom: 12rem;
+}
+
+.ser22 div p {
+    font-size: 1.5rem;
+    color: rgb(100, 99, 99);
+}
+
+.resume {
+    /* margin-top: 15rem; */
+    padding: 50px;
+    margin-top: 10rem;
+    padding: 10rem 0 15rem 0;
+}
+
+.res1 {
+    text-align: center;
+}
+
+.res1 h3 {
+    display: inline-block;
+    padding: 0.6rem;
+    background-color: #f5df4e;
+    font-size: 1.9rem;
+}
+
+.res1 h2 {
+    font-size: 3.6rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.res2 {
+    display: flex;
+    justify-content: center;
+}
+
+.res21,
+.res22 {
+    margin-top: 8rem;
+}
+
+.res21 {
+    margin-right: 20rem;
+    margin-left: 12rem;
+}
+
+.res21 h2,
+.res22 h2,
+.res3 h2 {
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+.res211,
+.res222 {
+    border-left: 3px solid #f5df4e;
+    margin-top: 2rem;
+}
+
+.res211 h3,
+.res222 h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 1rem;
+}
+.res2remh3{
+    padding-top: 1rem;
+}
+
+.res211 p,
+.res222 p {
+    padding-left: 1rem;
+    /* font-size: 1.15rem; */
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: rgb(100, 99, 99);
+}
+
+.res3 {
+    margin: 4rem 0 0 11.4rem;
+}
+
+.res31 {
+    display: flex;
+}
+
+.res311,
+.res322 {
+    margin-right: 15rem;
+}
+
+.res311 p,
+.res322 p {
+    padding-top: 2rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: black;
+}
+
+.container {
+    background-color: rgb(192, 192, 192);
+    width: 32vw;
+    border-radius: 15px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2rem;
+}
+
+.skill {
+    background-color: #f5df4e;
+    color: black;
+    text-align: right;
+    font-size: 1.2rem;
+    border-radius: 15px;
+}
+
+.html {
+    width: 80%;
+}
+
+.css {
+    width: 75%;
+}
+
+.njs {
+    width: 65%;
+}
+
+.cplus {
+    width: 85%;
+}
+
+.dbms,
+.js {
+    width: 60%;
+}
+
+.resbt {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.resbt1 {
+    background-color: #fff;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.resbt1:hover {
+    color: #fff;
+    background-color: rgb(62, 61, 61);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .faq {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .faq1 {
+        margin-bottom: 50px;
+    }
+
+    .faq2 {
+        margin-left: 4rem;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .faq {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .faq1 {
+        margin-right: 50px;
+    }
+}
+
+.faq {
+    padding: 50px;
+    background-color: #f5f5f5;
+    margin-top: 10rem;
+    padding: 10rem 0 15rem 0;
+}
+
+.faq1p {
+    display: inline-block;
+    padding: 0.6rem;
+    background-color: #f5df4e;
+    font-size: 1.9rem;
+}
+
+.faq1 h2 {
+    font-size: 3.6rem;
+    font-weight: 650;
+    padding-bottom: 2rem;
+}
+
+.faq1 p {
+    background-color: whitesmoke;
+    font-size: 1.5rem;
+}
+
+.faq .container1 {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.faq .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 1.8rem;
+}
+
+.faq .accordion:hover {
+    background-color: #ccc;
+}
+
+.faq .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.faq .accordion.active:after {
+    content: "\2212";
+}
+
+.faq .accordion-content {
+    padding: 0 18px;
+    background-color: whitesmoke;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+
+.faq .accordion-content p {
+    margin-top: 0;
+}
+
+.faq .accordion.active+.accordion-content {
+    max-height: 500px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    padding: 10rem 5rem;
+    background-color: #f5df4e;
+}
+
+.cont1 {
+    flex-basis: 100%;
+    max-width: 100%;
+    padding-right: 10rem;
+}
+
+.cont1 h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.cont1 h3 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.cont1 p {
+    font-size: 2rem;
+    padding-bottom: 1.3rem;
+}
+
+.conicon a {
+    padding-right: 2rem;
+    color: #080808;
+}
+
+.conicon1 a {
+    float: right;
+    padding-right: 2rem;
+    color: #080808;
+}
+
+/* Adjust icon size and spacing for smaller screens */
+@media only screen and (max-width: 768px) {
+
+    /* .conicon1 {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    } */
+    .conicon1 a {
+        font-size: 1.5rem;
+        /* margin: 0 10px; */
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    nav button {
+        margin-left: -5rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .cont1 {
+        padding-right: 0;
+    }
+
+    .cont2 h2 {
+        padding-top: 3rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .cont1 {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+
+    .cont2 {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+}
+
+
+.cont2 {
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+.cont2 h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    padding-bottom: 2rem;
+}
+
+.cont2form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont2form input,
+.cont2form textarea {
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 3rem;
+    border: none;
+    background-color: #f5df4e;
+    border-bottom: 3px solid #333;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.cont2form textarea {
+    resize: none;
+}
+
+.cont2btt {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.cont2bt {
+    background-color: #fff;
+    padding: 1rem 3.8rem;
+    font-size: 1.5rem;
+}
+
+.cont2bt:hover {
+    color: #fff;
+    background-color: rgb(62, 61, 61);
+    cursor: pointer;
+}
+
+
+footer {
+    background-color: #333;
+    padding: 6rem;
+    text-align: center;
+}
+
+footer h3 {
+    color: #fff;
+}
+
+footer span {
+    color: #f5df4e;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .me1 {
+        margin-left: 2rem;
+        margin-right: 3rem;
+    }
+
+    .ser21,
+    .ser22 {
+        flex-direction: column;
+        margin: 0 6rem 0 6rem;
+    }
+
+    .serml {
+        margin-top: 3rem;
+    }
+
+    .ser21 div,
+    .ser22 div {
+        padding-bottom: 2rem;
+    }
+
+    .ml,
+    .mr {
+        margin: 0;
+    }
+
+    .faq2 img {
+        height: 40vh;
+        width: 70vw;
+    }
+}
+
+@media only screen and (max-width: 703px) {
+
+    .medetails {
+        flex-direction: column;
+        margin: 0;
+        text-align: center;
+    }
+
+    .medetails div {
+        padding-bottom: 1.2rem;
+    }
+
+    .res2 {
+        flex-direction: column;
+    }
+
+    .res22 {
+        margin-left: 5rem;
+        margin-right: 2rem;
+    }
+
+    .res31 {
+        flex-direction: column;
+    }
+
+    .res3 {
+        margin-left: 5rem;
+    }
+
+    .container {
+        width: 80vw;
+    }
+
+    .cont1 {
+        margin: 0;
+    }
+
+    .cont2 {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .res311 {
+        margin-left: 0;
+    }
+
+    .res322 {
+        margin-right: 9rem;
+    }
+
+    .faq {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .faq2 img {
+        margin-right: 5rem;
+        padding-bottom: 3rem;
+    }
+}
+
+
+@media only screen and (max-width:1030px) {
+    .contact {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    .res21 {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+}

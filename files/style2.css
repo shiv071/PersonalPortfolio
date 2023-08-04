@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Slab:wght@500&family=Shantell+Sans&display=swap');
+
+body {
+    background-color: #f5df4e;;
+    color: #333;
+    font-family: 'Lato', sans-serif;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+}
+h1 {
+    font-size: 72px;
+    margin-bottom: 0;
+}
+p {
+    font-size: 24px;
+    margin-top: 10px;
+}
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 48px;
+    }
+    p {
+        font-size: 18px;
+    }
+}
